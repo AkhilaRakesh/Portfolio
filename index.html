@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+
+</head>
+
+<body>
+    <!------------------home-->
+    <div>
+        <nav id="desktop-nav">
+            <div class="logo"><img src="Assets/images (1).jpg" alt="logoimage"></div>
+            <div>
+                <ul class="nav-links" id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="card profile-details-container">
+                <div class="section-pic-container">
+                    <img src="Assets/profile.jpg" alt="profile pic">
+                </div>
+                <div class="header-text">
+                    <i><p>Hi There,</p></i>
+                    <i><p>I am a Developer</p></i>
+                    <i><p>I make the complex simple</p></i>
+                    <!-- <h1>AKHILA</h1> -->
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!------------------about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/searching.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <p>"Hello! I'm Akhila, a passionate and driven full-stack developer with hands-on experience in
+                        crafting robust and user-friendly web applications.
+                        I thrive on the excitement of turning ideas into reality through the power of code.
+
+                        I am committed to continuous learning, ensuring that my solutions are not only efficient but
+                        also in line with best practices.
+
+                        I am enthusiastic about collaborating with talented individuals and teams to create innovative
+                        solutions that solve real-world problems.
+
+                        When I'm not coding, you can find me exploring new technologies, sharing knowledge with the
+                        developer community, or pursuing my passion for problem-solving. Let's connect and embark on
+                        exciting projects together!"
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Server</span><br>MS SQL Server</li>
+                            <li><span>B/E Development</span><br>.NET Core Mvc </li>
+                            <li><span>B/E Development</span><br>Web API</li>
+                            <li><span>F/E Development</span><br>Html,CSS,Javascipt</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software Engineer</span><br>Scientific Vision</li>
+                            <li><span>Internship </span><br>Faith Infotech</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>Postman</span><br>Api Testing</li>
+                            <li><span>Visual Studio</span><br>IDE For Development</li>
+                            <li><span>Visual Studio Code</span><br>IDE For Development</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!------------------service-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MS SQL</h2>
+                    <P>Sql Query Preparation,Stored Procedure , Triggers</P>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <P>Back End Code Preparation,Api services</P><br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>User Interface</h2>
+                    <P>UI design using html,css and java script</P><br>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Assets/gaming.jpg">
+                    <div class="layer">
+                        <h3>Gamming App</h3>
+                        <p>This app will make your free time funny.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/cart.jpg">
+                    <div class="layer">
+                        <h3>e-Comerce App</h3>
+                        <p>This App will helps you to order your favouites from any where</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/searching.jpg">
+                    <div class="layer">
+                        <h3>Image Search App</h3>
+                        <p>Get your Favourite images </p>
+                        <a href="https://akhilarakesh.github.io/NewSearchApp1/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------------Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+             
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>akhilaunni631@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8547084582</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Assets/Resume Akhila Rakesh_new.pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+             
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 sub" disabled="disabled">Submit</button>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Akhila Rakeh.Portfolio <i class="fa-regular fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2e520f8e7d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
